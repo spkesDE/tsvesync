@@ -32,7 +32,7 @@ await veSync.login(this.username, this.password);
 
 ```ts
 import {VeSync} from 'tsvesync';
-import VeSyncPurifier from "./veSyncPurifier";
+import VeSyncPurifier from "tsvesync/veSyncPurifier";
 
 /*
  * Will return a list of devices as VeSyncDeviceBase objects. 
