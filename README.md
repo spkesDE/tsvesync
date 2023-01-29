@@ -20,11 +20,33 @@ npm install tsvesync
 
 ## Usage
 
+### Login
 ```ts
 import { VeSync } from 'tsvesync';
 
 let veSync = new VeSync();
 await veSync.login(this.username, this.password);
+```
+
+### Getting Devices
+
+```ts
+import {VeSync} from 'tsvesync';
+import VeSyncPurifier from "./veSyncPurifier";
+
+/*
+ * Will return a list of devices as VeSyncDeviceBase objects. 
+ * Use instranceof to filter or other methods like matching its uuid
+ */
+let devices = await veSync.getDevices();
+devices.forEach(device => {
+    if (device.isOn()) {
+        console.log(device.deviceName + " is online! :)");
+    }
+    if (device.isOn() && device instanceof VeSyncPurifier){
+        device.setFanSpeed(3);
+    }
+})
 ```
 
 ## Contributing
