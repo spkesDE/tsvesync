@@ -1,6 +1,6 @@
 {
   "name": "tsvesync",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "VeSync API for Typescript",
   "main": "veSync.ts",
   "scripts": {
@@ -17,9 +17,7 @@
   },
   "license": "MIT License",
   "devDependencies": {
+    "@types/node": "^18.11.18",
     "typescript": "^4.9.4"
-  },
-  "dependencies": {
-    "@types/node": "^18.11.18"
   }
 }
