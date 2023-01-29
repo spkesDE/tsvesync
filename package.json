@@ -1,6 +1,6 @@
 {
   "name": "tsvesync",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "VeSync API for Typescript",
   "main": "veSync.ts",
   "scripts": {
