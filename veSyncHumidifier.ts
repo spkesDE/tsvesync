@@ -1,6 +1,7 @@
 import Helper from "./lib/helper";
 import VeSyncDeviceBase from "./veSyncDeviceBase";
 import VeSync from "./veSync";
+import {ApiCalls} from "./lib/enum/apiCalls";
 
 export default class VeSyncHumidifier extends VeSyncDeviceBase {
 

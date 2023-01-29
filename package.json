@@ -1,8 +1,8 @@
 {
   "name": "tsvesync",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "VeSync API for Typescript",
-  "main": "src/veSync.ts",
+  "main": "veSync.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,10 @@
     "Levoit"
   ],
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:spkesDE/tsvesync.git"
+  },
   "license": "MIT License",
   "devDependencies": {
     "typescript": "^4.9.4"
