@@ -1,0 +1,21 @@
+{
+  "name": "tsvesync",
+  "version": "1.0.0",
+  "description": "VeSync API for Typescript",
+  "main": "src/veSync.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "VeSync",
+    "Levoit"
+  ],
+  "author": "",
+  "license": "MIT License",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@types/node": "^18.11.18"
+  }
+}
