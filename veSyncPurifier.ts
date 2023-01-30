@@ -52,15 +52,7 @@ export default class VeSyncPurifier extends VeSyncDeviceBase {
             method: ['getPurifierStatus', 'setSwitch', 'setNightLight',
                 'setLevel', 'setPurifierMode', 'setDisplay',
                 'setChildLock', 'setIndicatorLight']
-        },
-        'LV-PUR131S': {
-            module: 'VeSyncAir131',
-            models: ['LV-PUR131S', 'LV-RH131S'],
-            features: ['air_quality'],
-            method: ['getPurifierStatus', 'setSwitch', 'setNightLight',
-                'setLevel', 'setPurifierMode', 'setDisplay',
-                'setChildLock', 'setIndicatorLight']
-        },
+        }
     }
     //endregion
     debugMode: boolean = true
