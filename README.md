@@ -26,6 +26,12 @@ import { VeSync } from 'tsvesync';
 
 let veSync = new VeSync();
 await veSync.login(this.username, this.password);
+
+/*
+ * If the password is already saved as a MD5-hex Hash you can use the following
+ * public async login(username: string, password: string, isHashedPassword: boolean = false)
+ */
+await veSync.login(this.username, this.password, true);
 ```
 
 ### Getting Devices
@@ -47,6 +53,23 @@ devices.forEach(device => {
         device.setFanSpeed(3);
     }
 })
+```
+## Devices
+
+The devices listed below are supported by the classes mentioned below.
+Untested devices are marked by a *.
+
+#### [VeSyncPurifier](veSyncPurifier.ts)
+```
+Core200S, Core300S, Core400S, Core600S*
+```
+#### [VeSyncPurifierLV131](veSyncPurifierLV131.ts)
+```
+LV-PUR131S*
+```
+#### [VeSyncHumidifier](veSyncHumidifier.ts)
+```
+Classic200S, Classic300S, Dual200S, LV600S*
 ```
 
 ## Contributing
